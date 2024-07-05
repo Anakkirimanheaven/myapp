@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/container_widget.dart';
+import 'package:myapp/listview/latihan_list.dart';
+import 'package:myapp/listview/list_basic.dart';
+import 'package:myapp/listview/list_bulider.dart';
+import 'package:myapp/listview/list_separated.dart';
 import 'package:myapp/row_column/column_widget.dart';
 import 'package:myapp/row_column/latihan.dart';
 import 'package:myapp/row_column/ow_column_widget.dart';
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: const Text('My First App'),
           ),
-          body: TugasRowColum(),
+          body: LatihanListView(),
           ),
     );
   }

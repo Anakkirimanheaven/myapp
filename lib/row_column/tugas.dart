@@ -1,141 +1,45 @@
 import 'package:flutter/material.dart';
 
 class TugasRowColum extends StatelessWidget {
+  const TugasRowColum({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10), 
-                    image: DecorationImage(
-                      image: NetworkImage(
-                        'https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Carnage_%28Marvel_Comics_character%29.png/220px-Carnage_%28Marvel_Comics_character%29.png'),
-                    fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              
-            ),
-            Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10), 
-                      image: DecorationImage(
-                        image: NetworkImage(
-                            'https://cdn.europosters.eu/image/750/61315.jpg'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
+        Container(
+          width: double.infinity,
+          height: 100,
+          margin: EdgeInsets.all(10),
+          color: Colors.blueGrey,
+          child: Center(
+            child: Text('HOME'),
+          ),
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(
-              width: 300,
-              height: 150,
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
+           Container(
+                    width: 150,
+                    height: 150,
                     decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage(
-                            'https://img2.beritasatu.com/cache/beritasatu/480x310-3/2024/03/1711616311-1102x620.webp'),
-                        fit: BoxFit.cover,
+                      color: Colors.grey[300],
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 1,
                       ),
                     ),
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    child: Text(
-                      'Godzilla   X Kong',
-                      style: TextStyle(fontSize: 25),
+                    child: Center(
+                   child: Image.network(
+                    width: 130,
+                    'https://akcdn.detik.net.id/community/media/visual/2019/02/03/d6192df7-a32c-40be-8943-e5360391f236_169.jpeg?w=700&q=90'
+                   ),
                     ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              width: 300,
-              height: 150,
-              decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage(
-                            'https://m.media-amazon.com/images/M/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    child: Text(
-                      'Godzilla: Minus One',
-                      style: TextStyle(fontSize: 25),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+           ),
+           Container(
+            
+           ),
+        ],
+      )
       ],
     );
   }
